@@ -569,7 +569,7 @@ th, td {
 }
 
 th {
-    background: linear-gradient(45deg, #4caf50, #2196f3); Add gradient background
+    /* background: linear-gradient(45deg, #4caf50, #2196f3); Add gradient background */
     color: white; /* Text color */
 }
 
