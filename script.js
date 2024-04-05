@@ -36,3 +36,4 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", showOnScroll);
     showOnScroll(); // Check on initial load
 });
+

@@ -85,8 +85,9 @@ nav .navigation ul li a{
     font-size: 16px;
     font-weight: 500;
     transition: 0.3s ease;
-}
+}   
 
+nav .navigation ul li a.active,
 nav .navigation ul li a:hover{
     color: rgb(173, 92, 0);
 }
@@ -517,6 +518,125 @@ footer .copyright p{
     font-weight: 700;
     font-style: bold;
 }
+
+/* about-home */
+
+#about-home{
+    background-image:url("classroom.jpg");
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#about-home h1{
+    color: #f2f2f2;
+    font-size: xx-large;
+}
+
+#family h1{
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+.table-container {
+    margin: 0 auto;
+    width: 80%; /* Adjust the width as needed */
+    overflow-x: auto; /* Enable horizontal scrolling on smaller screens */
+}
+
+/* CSS for the table */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Add border radius */
+    overflow: hidden; /* Hide overflow for rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+th, td {
+    padding: 35px; /* Adjust padding as needed */
+    text-align: center; /* Center align text */
+}
+
+th {
+    background: linear-gradient(45deg, #4caf50, #2196f3); Add gradient background
+    color: white; /* Text color */
+}
+
+tr:nth-child{
+    background-color: #f2f2f2; /* Alternate row background color */
+}
+
+tr:hover {
+    background-color: #e0e0e0; /* Hover effect */
+}
+
+/* Styling for first column */
+td:first-child {
+    background-color: #f0f0f0; /* Background color */
+    font-weight: bold; /* Bold font */
+}
+
+/* Styling for last column */
+td:last-child {
+    font-style: italic; /* Italic font */
+}
+
+/* Advanced border styling */
+td, th {
+    position: relative;
+}
+
+td:before,
+th:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Adjust border radius */
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+td:hover:before,
+th:hover:before {
+    transform: scale(1.05);
+}
+
+/* Gradient border animation */
+@keyframes gradientBorder {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Apply gradient border animation */
+td:before,
+th:before {
+    background: linear-gradient(90deg, #4caf50, #2196f3);
+    background-size: 200% 200%;
+    animation: gradientBorder 1.5s infinite;
+}
+
 
 @media(max-width: 769px ){
     nav{
