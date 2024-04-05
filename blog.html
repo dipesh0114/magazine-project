@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS Magazine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav>
+        <img src="gita.jpeg" alt="loading....">
+        <h>𝔼-𝕄𝕒𝕘𝕒𝕫𝕚𝕟𝕖:𝔻𝕒𝕥𝕒𝕄𝕚𝕣𝕒𝕔𝕝𝕖 𝕀𝕟𝕤𝕚𝕘𝕙𝕥𝕤</h>
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a  href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Undergraduates</a>
+                    <div class="dropdown-content">
+                        <a href="student.html">2020-2024 Batch</a>
+                        <a href="student1.html">2021-2025 Batch</a>
+                        <a href="student2.html">2022-2026 Batch</a>
+                    </div>
+                </li>
+                <li><a  href="club.html">Clubs</a></li>
+                <li><a class="active" href="blog.html">Blog</a></li>
+                <li><a href="memory.html">Memories</a></li>
+            </ul>    
+            <img id="menu-btn" src="menu.jpg" alt="">
+        </div>
+    </nav>
+
+<!-- home     -->
+
+<section id="blog-home">
+    <h1>𝓟𝓻𝓸𝓳𝓮𝓬𝓽𝓼, 𝓒𝓮𝓻𝓽𝓲𝓯𝓲𝓬𝓪𝓽𝓮𝓼,𝓟𝓸𝓮𝓶𝓼, 𝓪𝓷𝓭 𝓜𝓪𝓷𝔂 𝓜𝓸𝓻𝓮</h1>
+    
+    
+</section>
+
+<!-- blog -->
+
+
+
+<footer id="footers">
+    <div class="copyright">
+        <p>Copyright @2024 All Rights Reserved | This site is managed by "Dipesh Patro" and "Deepak Kumar Kar"</p>
+    </div>
+    
+</footer>
+
+<script>
+    $('#menu-btn').click(function(){
+        $('nav .navigation ul').addClass('active')
+    });
+    $('#menu-close').click(function(){
+        $('nav .navigation ul').removeClass('active')
+    });
+    
+</script>
+
+<script src="https://kit.fontawesome.com/86e4d6e92c.js" crossorigin="anonymous"></script>
+</body>
+</html>
