@@ -6,6 +6,11 @@
     <title>DS Magazine</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous">
+    </script>
     
 
 </head>
@@ -13,15 +18,17 @@
     
     <nav>
         <img src="gita.jpeg" alt="loading....">
-        <h>DATA MIRACLE</h>
+        <h>𝔻𝕒𝕥𝕒𝕄𝕚𝕣𝕒𝕔𝕝𝕖 𝕀𝕟𝕤𝕚𝕘𝕙𝕥𝕤</h>
         <div class="navigation">
             <ul>
+                <i id="menu-close" class="fas fa-times"></i>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Student Clubs</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Memories</a></li>
-                
+            </ul>    
+            <img id="menu-btn" src="menu.jpg" alt="">
         </div>
     </nav>
 
@@ -29,7 +36,7 @@
 
 <section id="home">
     <div class="content">
-      <h1>Welcome!Welcome!Welcome!</h1>
+      <h1>▞▞▞ 🆆🅴🅻🅲🅾🅼🅴 🆃🅾 🅴-🅼🅰🅶🅰🆉🅸🅽🅴 ▞▞▞</h1>
     </div>
     <p>We are thrilled to embark on this journey with you as we delve into the exciting and ever-evolving world of computer science education. At CS Eds Magazine, our mission is to empower educators, inspire learners, and foster a community dedicated to advancing computer science education worldwide.
 
@@ -257,6 +264,16 @@
     </div>
     
 </footer>
+
+<script>
+    $('#menu-btn').click(function(){
+        $('nav .navigation ul').addClass('active')
+    });
+    $('#menu-close').click(function(){
+        $('nav .navigation ul').removeClass('active')
+    });
+    
+</script>
 
 
 <script src="script.js"></script>

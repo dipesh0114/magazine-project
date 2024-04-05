@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    font-weight: 300;
+    font-weight: 690;
     font-style: normal;
 }
 
@@ -29,7 +29,8 @@ h6{
 nav{
     position: fixed;
     width: 100%;
-    background-color: aliceblue;
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 9%, rgba(253,174,45,0.9612219887955182) 95%);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -38,6 +39,11 @@ nav{
     box-shadow: 2px 2px 10px rgba(0 0 0 0.15);
     font-family: "Poppins", sans-serif;
     z-index: 9999; /* Adjust the z-index value as needed */
+
+}
+nav h{
+    font-size: x-large;
+    color: rgb(24,24,49);
 }
 
 
@@ -45,6 +51,21 @@ nav img{
     width: 50px;
     cursor: pointer;
     height: 50px;
+    mix-blend-mode: multiply;
+}
+
+nav .navigation{
+    display: flex;
+}
+
+#menu-btn{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+#menu-close{
+    display: none;
 }
 
 nav .navigation ul{
@@ -502,7 +523,60 @@ footer .copyright p{
         padding: 15px 20px;
     }
     nav img{
-        width: 130px;
+        width: 80px;
         cursor: pointer;
     }
+    #menu-btn{
+        display: initial;
+    }
+    #menu-close{
+        display: initial;
+        font-size: 1.6rem;
+        color: #fff;
+        padding: 30px 30px 0 20px;
+    }
+
+    nav .navigation ul{
+        position: absolute;
+        top: 0;
+        right: -220px;
+        width: 200px;
+        height: 100vh;
+        background: rgba(17, 20, 104, 0.45);
+        backdrop-filter: blur(4.5px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    nav .navigation ul.active{
+        right: 0;
+    }
+
+    nav .navigation ul li{
+        padding: 20px 0 20px 40px;
+        margin-left: 0;
+    }
+
+    nav .navigation ul li a{
+        color: #fff;
+    }
+
+    #home{
+        padding-top: 0px;
+    }
+    #home p{
+        width: 90%;
+    }
+    #features {
+        padding: 8vw 4vw 0 4vw;
+  
+    }
+
+    #course{
+        padding: 8vw 4vw 0 4vw;
+    }
+
 }
