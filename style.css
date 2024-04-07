@@ -428,6 +428,18 @@ svg {
 	background-image: linear-gradient(180deg, rgba(60, 26, 229, 0) 0%, #3C1AE5 50%, rgba(60, 26, 229, 0) 100%);
 }
 
+@media screen and (max-width: 600px) {
+    .void {
+        max-width: 95%; /* Adjusted for even smaller screens */
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .void {
+        max-width: 100%; /* Adjusted for the smallest screens */
+    }
+}
+
 /* course */
 
 #course{
