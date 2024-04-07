@@ -1,65 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DS Magazine</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-</head>
-<body>
-    
-    <nav>
-        <img src="gita.jpeg" alt="loading....">
-        <h>𝔼-𝕄𝕒𝕘𝕒𝕫𝕚𝕟𝕖:𝔻𝕒𝕥𝕒𝕄𝕚𝕣𝕒𝕔𝕝𝕖 𝕀𝕟𝕤𝕚𝕘𝕙𝕥𝕤</h>
-        <div class="navigation">
-            <ul>
-                <i id="menu-close" class="fas fa-times"></i>
-                <li><a href="index.html">Home</a></li>
-                <li><a  href="about.html">About</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Undergraduates</a>
-                    <div class="dropdown-content">
-                        <a href="student.html">2020-2024 Batch</a>
-                        <a href="student1.html">2021-2025 Batch</a>
-                        <a href="student2.html">2022-2026 Batch</a>
-                    </div>
-                </li>
-                <li><a href="club.html">Clubs</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a class="active" href="memory.html">Memories</a></li>
-            </ul>    
-            <img id="menu-btn" src="menu.jpg" alt="">
-        </div>
-    </nav>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>DS Magazine</title>
+		<meta name="description" content="Simple on-scroll animations for connected grid items" />
+		<meta name="keywords" content="on-scroll, animation, gsap, scrolltrigger, css, grid, layout, effect" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/pdt4wgm.css">
+		<link rel="stylesheet" type="text/css" href="base.css" />
+		<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous">
+  
+    </script>
+		
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
+	</head>
+	<body class="demo-1 loading">
+		<main>
+			<div class="frame">
+				
+				<nav>
+					<img src="image/gita.jpeg "  alt="loading....">
+					  <h>𝔼-𝕄𝕒𝕘𝕒𝕫𝕚𝕟𝕖:𝔻𝕒𝕥𝕒𝕄𝕚𝕣𝕒𝕔𝕝𝕖 𝕀𝕟𝕤𝕚𝕘𝕙𝕥𝕤</h>
+					  <div class="navigation">
+						  <ul>
+							  <i id="menu-close" class="fas fa-times"></i>
+							  <li><a href="index.html">Home</a></li>
+							  <li><a  href="about.html">About</a></li>
+							  <li class="dropdown">
+								  <a href="student.html" class="dropbtn">Students</a>
+								  <div class="dropdown-content">
+									  <a href="student.html">2020-2024 Batch</a>
+									  <a href="student1.html">2021-2025 Batch</a>
+									  <a href="student2.html">2022-2026 Batch</a>
+								  </div>
+							  </li>
+							  <li><a href="club.html">Clubs</a></li>
+							  <li><a href="blog.html">Blog</a></li>
+							  <li><a class="active" href="memory.html">Memories</a></li>
+						  </ul>    
+						  <img id="menu-btn" src="image/menu.jpg" alt="">
+					  </div>
+				  </nav>
+			</div>
+			<div class="grid">
+			    <figure class="grid__item" style="--r: 1;--c: 1;--s:4;">
+			        <div class="grid__item-img">
+			            <div class="grid__item-img-inner" style="background-image:url(img/1.jpg);"></div>
+			        </div>
+			        <figcaption class="grid__item-caption"><h3>Warm Oasis Retreat</h3> <span>2023</span></figcaption>
+			    </figure>
+			    <figure class="grid__item" style="--r: 2;--c: 5;--s:3;">
+			        <div class="grid__item-img">
+			            <div class="grid__item-img-inner" style="background-image:url(img/2.jpg);"></div>
+			        </div>
+			        <figcaption class="grid__item-caption"><h3>Desert Serenity Suites</h3> <span>2022</span></figcaption>
+			    </figure>
+			    <figure class="grid__item" style="--r: 3;--c: 3;--s:2;">
+			        <div class="grid__item-img">
+			            <div class="grid__item-img-inner" style="background-image:url(img/3.jpg);"></div>
+			        </div>
+			        <figcaption class="grid__item-caption"><h3>Sandscape Elegance</h3> <span>2024</span></figcaption>
+			    </figure>
+			    <figure class="grid__item" style="--r: 4;--c: 1;--s:2;">
+			        <div class="grid__item-img">
+			            <div class="grid__item-img-inner" style="background-image:url(img/4.jpg);"></div>
+			        </div>
+			        <figcaption class="grid__item-caption"><h3>Dune Mirage Retreat</h3> <span>2021</span></figcaption>
+			    </figure>
+			    <figure class="grid__item" style="--r: 5;--c: 3;--s:5;">
+			        <div class="grid__item-img">
+			            <div class="grid__item-img-inner" style="background-image:url(img/5.jpg);"></div>
+			        </div>
+			        <figcaption class="grid__item-caption"><h3>Sahara Luxury Oasis</h3> <span>2023</span></figcaption>
+			    </figure>
+			    <figure class="grid__item" style="--r: 6;--c: 2;">
+			        <div class="grid__item-img">
+			            <div class="grid__item-img-inner" style="background-image:url(img/6.jpg);"></div>
+			        </div>
+			        <figcaption class="grid__item-caption"><h3>Arabian Haven</h3> <span>2022</span></figcaption>
+			    </figure>
+			    <figure class="grid__item" style="--r: 7;--c: 3;--s:3;">
+			        <div class="grid__item-img">
+			            <div class="grid__item-img-inner" style="background-image:url(img/7.jpg);"></div>
+			        </div>
+			        <figcaption class="grid__item-caption"><h3>Desert Dreamscape Lodges</h3> <span>2024</span></figcaption>
+			    </figure>
+			    <figure class="grid__item" style="--r: 8;--c: 6;--s:2;">
+			        <div class="grid__item-img">
+			            <div class="grid__item-img-inner" style="background-image:url(img/8.jpg);"></div>
+			        </div>
+			        <figcaption class="grid__item-caption"><h3>Golden Sands Interiors</h3> <span>2021</span></figcaption>
+			    </figure>
+			    <figure class="grid__item" style="--r: 9;--c: 1;--s:5;">
+			        <div class="grid__item-img">
+			            <div class="grid__item-img-inner" style="background-image:url(img/9.jpg);"></div>
+			        </div>
+			        <figcaption class="grid__item-caption"><h3>Desert Mirage Suites</h3> <span>2023</span></figcaption>
+			    </figure>
+			    <figure class="grid__item" style="--r: 10;--c: 6;--s:3;">
+			        <div class="grid__item-img">
+			            <div class="grid__item-img-inner" style="background-image:url(img/10.jpg);"></div>
+			        </div>
+			        <figcaption class="grid__item-caption"><h3>Oasis Tranquility</h3> <span>2022</span></figcaption>
+			    </figure>
+			    <figure class="grid__item" style="--r: 11;--c: 4;--s: 2;">
+			        <div class="grid__item-img">
+			            <div class="grid__item-img-inner" style="background-image:url(img/11.jpg);"></div>
+			        </div>
+			        <figcaption class="grid__item-caption"><h3>Desert Zen Retreat</h3> <span>2024</span></figcaption>
+			    </figure>
+			    <figure class="grid__item" style="--r: 12;--c: 1;--s:3;">
+			        <div class="grid__item-img">
+			            <div class="grid__item-img-inner" style="background-image:url(img/12.jpg);"></div>
+			        </div>
+			        <figcaption class="grid__item-caption"><h3>Sandscape Luxury</h3> <span>2021</span></figcaption>
+			    </figure>
+			    <figure class="grid__item" style="--r: 13;--c: 4;--s: 5;">
+			        <div class="grid__item-img">
+			            <div class="grid__item-img-inner" style="background-image:url(img/13.jpg);"></div>
+			        </div>
+			        <figcaption class="grid__item-caption"><h3>Desert Elegance Escapes</h3><span>2023</span></figcaption>
+			    </figure>
+			</div>
+			
+			<footer>
+				<div class="copyright">
+					<p>Copyright @2024 All Rights Reserved | This site is managed by "Dipesh Patro" and "Deepak Kumar Kar"</p>
+				</div>
+				
+			</footer>
+		</main>
+		<script>
+			$('#menu-btn').click(function(){
+				$('nav .navigation ul').addClass('active')
+			});
+			$('#menu-close').click(function(){
+				$('nav .navigation ul').removeClass('active')
+			});
+			
+		</script>
+	
+		<script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
+		<script src="gsap.min.js"></script>
+		<script src="ScrollTrigger.min.js"></script>
+		<script src="lenis.min.js"></script>
+		<script src="imagesloaded.pkgd.min.js"></script>
+		<script type="module" src="index.js"></script>
+	</body>
 
-<!-- home     -->
-
-<section id="memory-home">
-    
-</section>
-
-<!-- memory -->
-
-
-<footer id="footers">
-    <div class="copyright">
-        <p>Copyright @2024 All Rights Reserved | This site is managed by "Dipesh Patro" and "Deepak Kumar Kar"</p>
-    </div>
-    
-</footer>
-
-<script>
-    $('#menu-btn').click(function(){
-        $('nav .navigation ul').addClass('active')
-    });
-    $('#menu-close').click(function(){
-        $('nav .navigation ul').removeClass('active')
-    });
-    
-</script>
-
-<script src="https://kit.fontawesome.com/86e4d6e92c.js" crossorigin="anonymous"></script>
-</body>
 </html>

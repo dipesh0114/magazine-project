@@ -94,7 +94,7 @@ nav .navigation ul li a:hover{
 
 
 #home{
-    background-image:url("2.jpg");
+    background-image:url("image/2.jpg");
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -532,7 +532,7 @@ footer .copyright p{
 /* about-home */
 
 #about-home{
-    background-image:url("classroom.jpg");
+    background-image:url("image/classroom.jpg");
     height: 60vh;
     width: 100%;
     background-size: cover;
@@ -650,7 +650,7 @@ th:before {
 /* student */
 
 #student-home{
-    background-image:url("student1.jpg");
+    background-image:url("image/student1.jpg");
     height: 60vh;
     width: 100%;
     background-size: cover;
@@ -704,7 +704,7 @@ th:before {
 /* club section */
 
 #club-home{
-    background-image:url("clubs.jpg");
+    background-image:url("image/clubs.jpg");
     height: 60vh;
     width: 100%;
     background-size: cover;
@@ -771,8 +771,6 @@ th:before {
 
 
     }
-
-
     #footers {
         position: fixed;
         bottom: 0;
@@ -787,7 +785,7 @@ th:before {
 /* blog section */
 
 #blog-home{
-    background-image:url("project.jpg");
+    background-image:url("image/project.jpg");
     height: 60vh;
     width: 100%;
     background-size: cover;

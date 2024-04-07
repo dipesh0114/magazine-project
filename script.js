@@ -1,9 +1,9 @@
 function changeBg(){
     const images = [
-        'url("7.jpg")',
-        'url("3.jpg")',
-        'url("6.jpg")',
-        'url("2.jpg")',
+        'url("image/7.jpg")',
+        'url("image/3.jpg")',
+        'url("image/6.jpg")',
+        'url("image/2.jpg")',
     ]
 
     const home = document.getElementById("home")
