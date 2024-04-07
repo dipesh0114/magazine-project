@@ -428,17 +428,6 @@ svg {
 	background-image: linear-gradient(180deg, rgba(60, 26, 229, 0) 0%, #3C1AE5 50%, rgba(60, 26, 229, 0) 100%);
 }
 
-@media screen and (max-width: 600px) {
-    .void {
-        max-width: 95%; /* Adjusted for even smaller screens */
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .void {
-        max-width: 100%; /* Adjusted for the smallest screens */
-    }
-}
 
 /* course */
 
@@ -882,6 +871,15 @@ th:before {
         padding: 8vw 4vw 0 4vw;
     } 
 
+    #features li {
+        position: absolute;
+        top: 78%;
+        transform: translateY(-50%);
+        /* outline: 2px dashed cyan; */
+        width: 135%;
+        animation: rotateCW var(--rotate-speed, ) * 1s var(--easing) infinite;
+    }
+
 
 
 }
@@ -890,6 +888,15 @@ th:before {
     th, td {
         padding: 20px; /* Adjust padding for smaller screens */
     }
+
+    #features li {
+        position: absolute;
+        top: 78%;
+        transform: translateY(-50%);
+        /* outline: 2px dashed cyan; */
+        width: 135%;
+        animation: rotateCW var(--rotate-speed, ) * 1s var(--easing) infinite;
+    }
 }
 
 /* For even smaller screens */
@@ -897,4 +904,24 @@ th:before {
     th, td {
         padding: 15px; /* Further adjust padding for even smaller screens */
     }
+
+    #features li {
+        position: absolute;
+        top: 78%;
+        transform: translateY(-50%);
+        /* outline: 2px dashed cyan; */
+        width: 135%;
+        animation: rotateCW var(--rotate-speed, ) * 1s var(--easing) infinite;
+    }
 }
+@media screen and (max-width: 360px) {
+    #home h2 {
+        font-size: 1.5rem; /* Adjusted font size for smallest screen */
+    }
+    
+    #home p {
+        width: 80%; /* Adjusted width for smallest screen */
+        font-size: 0.8rem; /* Adjusted font size for smallest screen */
+    }
+}
+
