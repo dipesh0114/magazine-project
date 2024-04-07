@@ -164,17 +164,26 @@ nav .navigation ul li a:hover{
     background-color: #f8f9fa;
     padding: 20px;
     border-radius: 10px;
-    border: 2px solid #007bff; /* Added border design */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow */
+    border: 2px solid #007bff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    transform: translateY(50px); /* Initial position below */
-    opacity: 0; /* Hidden by default */
-    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition */
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .message-container {
     max-width: 800px;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+    #message {
+        max-width: 90%; /* Adjust width for smaller screens */
+        margin: 0 auto; /* Center the message */
+        transform: translateY(0); /* Move message to initial position */
+        opacity: 1; /* Make message visible */
+    }
 }
 
 h2 {
