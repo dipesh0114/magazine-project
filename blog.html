@@ -7,11 +7,34 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+        /* Additional styles for navbar */
+      
+
+        /* Adjustments for mobile responsiveness */
+        @media only screen and (max-width: 767px) {
+            .ag-courses_box {
+                padding: 20px 0; /* Adjust padding for smaller screens */
+            }
+            .ag-courses_item {
+                flex-basis: calc(50% - 20px);
+                margin: 0 10px 20px; /* Adjust margins for smaller screens */
+            }
+        }
+
+        /* Adjustments for smaller screens */
+        @media only screen and (max-width: 639px) {
+            .ag-courses_item {
+                flex-basis: 100%;
+                margin: 0 0 20px; /* Adjust margins for smaller screens */
+            }
+        }
+    </style>
 </head>
 <body>
     
     <nav>
-        <img src="image/gita.jpeg "  alt="loading....">
+        <img src="image/gita.jpeg" alt="loading....">
         <h>𝔼-𝕄𝕒𝕘𝕒𝕫𝕚𝕟𝕖:𝔻𝕒𝕥𝕒𝕄𝕚𝕣𝕒𝕔𝕝𝕖 𝕀𝕟𝕤𝕚𝕘𝕙𝕥𝕤</h>
         <div class="navigation">
             <ul>
@@ -35,143 +58,190 @@
     </nav>
 
 <!-- home     -->
-
+<!-- 
 <section id="blog-home">
     <h1>𝓟𝓻𝓸𝓳𝓮𝓬𝓽𝓼, 𝓒𝓮𝓻𝓽𝓲𝓯𝓲𝓬𝓪𝓽𝓮𝓼,𝓟𝓸𝓮𝓶𝓼, 𝓪𝓷𝓭 𝓜𝓪𝓷𝔂 𝓜𝓸𝓻𝓮</h1>
-    
-    
 </section>
 
 <!-- blog -->
-<section id="course">
-    <h1>Captivating Subjects</h1>
-    <p>Providing resources, workshops, and training opportunities for educators to enhance their CS teaching skills and stay up-to-date with the latest trends and developments.!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS Magazine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+        /* Additional styles for navbar */
+        /* Adjustments for mobile responsiveness */
+        @media only screen and (max-width: 767px) {
+            .ag-courses_box {
+                padding: 20px 0; /* Adjust padding for smaller screens */
+            }
+            .ag-courses_item {
+                flex-basis: calc(50% - 20px);
+                margin: 0 10px 20px; /* Adjust margins for smaller screens */
+            }
+        }
 
-    <div class="course-box">
-        <div class="courses">
-            <img src="image/iot.jpg" alt="laoding...">
-            <div class="details">
-                <h6>Internet of Things</h6>
-                <div class="star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span>(237)</span>
-                </div>
-            </div>
+        /* Adjustments for smaller screens */
+        @media only screen and (max-width: 639px) {
+            .ag-courses_item {
+                flex-basis: 100%;
+                margin: 0 0 20px; /* Adjust margins for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <img src="image/gita.jpeg" alt="loading....">
+        <h>𝔼-𝕄𝕒𝕘𝕒𝕫𝕚𝕟𝕖:𝔻𝕒𝕥𝕒𝕄𝕚𝕣𝕒𝕔𝕝𝕖 𝕀𝕟𝕤𝕚𝕘𝕙𝕥𝕤</h>
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a  href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="student.html" class="dropbtn">Students</a>
+                    <div class="dropdown-content">
+                        <a href="student.html">2020-2024 Batch</a>
+                        <a href="student1.html">2021-2025 Batch</a>
+                        <a href="student2.html">2022-2026 Batch</a>
+                    </div>
+                </li>
+                <li><a  href="club.html">Clubs</a></li>
+                <li><a class="active" href="blog.html">Blog</a></li>
+                <li><a href="memory.html">Memories</a></li>
+            </ul>    
+            <img id="menu-btn" src="image/menu.jpg" alt="">
         </div>
-        <div class="courses">
-            <img src="image/cc.jpeg" alt="laoding...">
-            <div class="details">
-                <h6>Cloud Computing</h6>
-                <div class="star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span>(296)</span>
-                </div>
-            </div>
-        </div>
-        <div class="courses">
-            <img src="image/cd.png" alt="laoding...">
-            <div class="details">
-                <h6>Compiler design</h6>
-                <div class="star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span>(321)</span>
-                </div>
-            </div>
-        </div>
-        <div class="courses">
-            <img src="flat.jpeg" alt="laoding...">
-            <div class="details">
-                <h6>Flat</h6>
-                <div class="star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span>(267)</span>
-                </div>
-            </div>
-        </div>
-        <div class="courses">
-            <img src="image/webdev.jpeg" alt="laoding...">
-            <div class="details">
-                <h6>Web Development</h6>
-                <div class="star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span>(259)</span>
-                </div>
-            </div>
-        </div>
-        <div class="courses">
-            <img src="image/ds.png" alt="laoding...">
-            <div class="details">
-                <h6>Data Science</h6>
-                <div class="star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span>(212)</span>
-                </div>
-            </div>
-        </div>
-        <div class="courses">
-            <img src="image/maths.jpeg" alt="laoding...">
-            <div class="details">
-                <h6>Mathematics</h6>
-                <div class="star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span>(261)</span>
-                </div>
-            </div>
-        </div>
-        <div class="courses">
-            <img src="image/os.jpeg" alt="laoding...">
-            <div class="details">
-                <h6>Operating System</h6>
-                <div class="star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span>(240)</span>
-                </div>
-            </div>
-        </div>
-    </div>
+    </nav>
 
+<!-- home     -->
+<!-- 
+<section id="blog-home">
+    <h1>𝓟𝓻𝓸𝓳𝓮𝓬𝓽𝓼, 𝓒𝓮𝓻𝓽𝓲𝓯𝓲𝓬𝓪𝓽𝓮𝓼,𝓟𝓸𝓮𝓶𝓼, 𝓪𝓷𝓭 𝓜𝓪𝓷𝔂 𝓜𝓸𝓻𝓮</h1>
 </section>
 
+<!-- blog -->
+<div class="ag-courses_item">
+  <a href="./Achivement/Jajati .pdf" class="ag-courses-item_link" target="_blank">
+      <div class="ag-courses-item_bg"></div>
+      <div class="ag-courses-item_title">
+          Akash mahto
+      </div>
+      <div class="ag-courses-item_date-box">
+          Akash mahto
+          <span class="ag-courses-item_date">
+             CSEDS 2104007
+          </span>
+      </div>
+  </a>
+</div>
+
+<div class="ag-format-container">
+    <div class="ag-courses_box">
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+          Akash mahto
+          </div>
+  
+          <div class="ag-courses-item_date-box">
+            Akash mahto
+            <span class="ag-courses-item_date">
+               CSEDS 2104007
+            </span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Add more course items similarly -->
+  
+    </div>
+  </div>
+<div class="ag-format-container">
+    <div class="ag-courses_box">
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+          Akash mahto
+          </div>
+  
+          <div class="ag-courses-item_date-box">
+            Akash mahto
+            <span class="ag-courses-item_date">
+               CSEDS 2104007
+            </span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Add more course items similarly -->
+  
+    </div>
+  </div>
+<div class="ag-format-container">
+    <div class="ag-courses_box">
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+          Akash mahto
+          </div>
+  
+          <div class="ag-courses-item_date-box">
+            Akash mahto
+            <span class="ag-courses-item_date">
+               CSEDS 2104007
+            </span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Add more course items similarly -->
+  
+    </div>
+  </div>
+<div class="ag-format-container">
+    <div class="ag-courses_box">
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+          Akash mahto
+          </div>
+  
+          <div class="ag-courses-item_date-box">
+            Akash mahto
+            <span class="ag-courses-item_date">
+               CSEDS 2104007
+            </span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Add more course items similarly -->
+  
+    </div>
+  </div>
 
 
-<footer id="footers">
+<!-- <footer id="footers">
     <div class="copyright">
         <p>Copyright @2024 All Rights Reserved | This site is managed by "Dipesh Patro" and "Deepak Kumar Kar"</p>
     </div>
-    
-</footer>
+</footer> -->
 
 <script>
     $('#menu-btn').click(function(){
@@ -180,7 +250,12 @@
     $('#menu-close').click(function(){
         $('nav .navigation ul').removeClass('active')
     });
-    
+
+    function openPDF(pdfPath) {
+        window.open(pdfPath, '_blank'); // Open the PDF file in a new tab
+    }
+
+
 </script>
 
 <script src="https://kit.fontawesome.com/86e4d6e92c.js" crossorigin="anonymous"></script>
